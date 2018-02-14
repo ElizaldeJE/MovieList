@@ -23,22 +23,22 @@ Once the project moves into development, the press release can be used as a touc
   > The product is set for everyone who wants to keep track of the movies theyve watched and how many times
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > With this application you can add the movies you have seen and how many times to a list. Which ones will be your top favorite?
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > It solves the problem of wondering if you have already seen that movie or not and how many times you have seen it.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > The user will add the title of the movie and how many times they have seen it so they can keep track of what they are watching.
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Just open your app and look at your list or add movies.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > Thanks to this great app I now know if I have watched a certain movie or not, it is a real time saver!
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Go watch a movie and add it to your list! #MovieTime
