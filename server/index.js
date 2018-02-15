@@ -4,13 +4,13 @@ var items = require('../database-mysql');
 
 var app = express();
 
-app.use(express.static(__dirname + '/../react-client/dist'));
+app.use(express.static(__dirname + '/../client/dist/index.html'));
 
 
-app.get('/items', function (req, res) {
+app.get('/', function (req, res) {
   items.selectAll(function(err, data) {
     if(err) {
-      res.sendStatus(500);
+      res.sendStatus(200);
     } else {
       res.json(data);
     }
