@@ -1,6 +1,6 @@
   const express = require('espress');
   const bodyParser = require('body-parser');
-  const items = require('../database/data.js');
+  const movies = require('../database/data.js');
   const app = express();
 
   app.use(bodyParser.json());
