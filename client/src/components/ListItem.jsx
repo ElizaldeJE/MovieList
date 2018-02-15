@@ -1,9 +1,10 @@
 import React from 'react';
 
-const ListItem = (props) => (
-  <div>
-    { props.item.description }
-  </div>
-)
+const MovieTitle = (props) => (<div>
+  <span>{props.item.description}</span>
 
-export default ListItem;
+  <span>{props.item.quantity}</span>
+
+  </div>);
+
+export default MovieTitle;
