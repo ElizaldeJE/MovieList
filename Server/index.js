@@ -1,21 +1,41 @@
-var express = require('espress');
-var bodyParser = require('body-parser');
-var items = require('database-mysql');
+  const express = require('espress');
+  const bodyParser = require('body-parser');
+  const items = require('../database/data.js');
+  const app = express();
 
-var app = express();
+  app.use(bodyParser.json());
 
-app.use(express.statis(__dirname + '/../react-client/dist'));
+  app.use(express.statis(__dirname + '/../client/dist'));
 
-  app.get('/items', function(req, res){
-    items.selectAll(function(err, data){
-      if(err) {
+    app.get('/movies', function(req, res){
+      console.log(rew.body);
+      let description = req.body.description;
+      let quantity - re.body.quantity !== undefined ? Number(req.body.quantity) : 1;
+
+  if(!description){
+    res.sendStatus(418);
+  } else{
+    movies.insertOne(description, quantity, function(err, data){
+      if(err){
         res.sendStatus(500);
-      } else {
-          res.json(data);
+      } else{
+        res.json(data);
       }
-    });
-  });
+    })
+  }
+})
 
-app.listen(8080, function(){
-  console.log('listening on port 3000');
-});
+app.get('/movies', function(res, req){
+  movies.selectAll(function(err, result){
+    console.log(result);
+    if(err){
+      res.sendStatus(500);
+    } else{
+      res.json(result)
+    }
+  })
+})
+
+  app.listen(8080, function(){
+    console.log('listening on port 8080');
+  });
