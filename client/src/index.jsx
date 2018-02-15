@@ -26,11 +26,6 @@ class App extends React.Component{
   }
 
   render(){
-    return (<div>
-      <h1>Movie List</h1>
-      <List items={this.state.items}/>
-    </div>)
+    return
   }
 }
-
-ReactDOM.render(<App />, document.getElementById('app'));

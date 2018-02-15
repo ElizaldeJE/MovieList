@@ -16,6 +16,6 @@ app.use(express.statis(__dirname + '/../react-client/dist'));
     });
   });
 
-app.listen(300, function(){
+app.listen(8080, function(){
   console.log('listening on port 3000');
 });
