@@ -1,12 +1,12 @@
 import React from 'react':
-import ListItem from './ListItem.jsx';
+import MovieTitle from './MovieTitle.jsx';
 
-const List = (props) => (
+const MovieList = (props) => (
   <div>
-    <h4>List Component</h4>
-    There are {props.items.length} movies.
-    {props.items.map(item => <ListItem item={item}/>)}
+    <h4>Movie List Component</h4>
+    There are {props.movies.length} movies.
+    {props.items.map(item => <MovieList item={item}/>)}
   </div>
 )
 
-export default List;
+export default MovieList;
