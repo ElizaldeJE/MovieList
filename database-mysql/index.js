@@ -1,20 +1,34 @@
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'FILL_ME_IN',
-  database : 'test'
+  host: 'localhost',
+  user: 'root',
+  password: 'Hisoka22',
+  database: 'review'
 });
 
-var selectAll = function(callback) {
-  connection.query('SELECT * FROM items', function(err, results, fields) {
-    if(err) {
+
+
+var selectAll = (callback) => {
+  connection.query('SELECT * FROM movies', function(err, result, fields) {
+    console.log(err);
+    if (err) {
       callback(err, null);
     } else {
-      callback(null, results);
+      callback(null, result);
+    }
+  });
+};
+
+var insertOne = (description, quantity, callback) => {
+  connection.query('INSERT INTO movies (description, quantity) value (?,?)', [description, quantity], function(err, result, feilds) {
+    if (err) {
+      callback(err, null);
+    } else {
+      callback(null, result);
     }
   });
 };
 
 module.exports.selectAll = selectAll;
+module.exports.insertOne = insertOne;

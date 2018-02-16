@@ -1,29 +1,29 @@
 window.data = [{
-    description: "frozen pizza",
+    description: "Ted",
     quantity: 5
   },
   {
-    description: "noosa yogurt",
+    description: "Dead Pool",
     quantity: 10
   },
   {
-    description: "wine",
+    description: "007",
     quantity: 2
   },
   {
-    description: "iced coffee",
+    description: "Star Wars VII",
     quantity: 1
   },
   {
-    description: "Cookie",
+    description: "Facebook",
     quantity: 12
   },
   {
-    description: "Broccoli",
+    description: "Black Panther",
     quantity: 1
   },
   {
-    description: "eggs",
+    description: "Guardians of the Galaxy",
     quantity: 5
   }
 ]
